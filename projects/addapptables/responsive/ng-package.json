@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../../dist/addapptables/responsive",
+  "lib": {
+    "entryFile": "src/public_api.ts",
+    "umdModuleIds": {
+      "@ngrx/store": "ngrx-store",
+      "@addapptables/ngrx-actions": "addapptables-ngrx-actions"
+    }
+  }
+}

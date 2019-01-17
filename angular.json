@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "@addapptables/responsive": {
+      "root": "projects/addapptables/responsive",
+      "sourceRoot": "projects/addapptables/responsive/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/addapptables/responsive/tsconfig.lib.json",
+            "project": "projects/addapptables/responsive/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/addapptables/responsive/src/test.ts",
+            "tsConfig": "projects/addapptables/responsive/tsconfig.spec.json",
+            "karmaConfig": "projects/addapptables/responsive/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/addapptables/responsive/tsconfig.lib.json",
+              "projects/addapptables/responsive/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "responsive-ui"

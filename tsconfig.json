@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@addapptables/responsive": [
+        "dist/addapptables/responsive"
+      ],
+      "@addapptables/responsive/*": [
+        "dist/addapptables/responsive/*"
+      ]
+    }
   }
 }
