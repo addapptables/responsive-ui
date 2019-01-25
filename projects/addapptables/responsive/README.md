@@ -8,6 +8,14 @@ To get started, lets install the package thru npm:
 npm i @addapptables/responsive --S
 ```
 
+Install peer dependencies
+
+```
+npm i
+@addapptables/ngrx-actions
+@ngrx/store --S
+```
+
 ## How to use
 Addapptables reponsive depends on ngrx
 
